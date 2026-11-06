@@ -29,6 +29,11 @@ Tuned models, nested cross-validation:
 
 Nested CV selects the tuned kNN as the best model. The fixed SVM used for the feature importance analysis (C=100, gamma=0.01) reaches a test ROC-AUC of 0.732.
 
+<p align="center">
+  <img src="images/permutation_importance.png" width="49%" alt="Permutation feature importance">
+  <img src="images/roc_curve_final_model.png" width="49%" alt="ROC curve of the final model">
+</p>
+
 Ablation study (fixed SVM, 5-fold CV):
 
 | Setting | ROC-AUC | F1 |
@@ -47,6 +52,7 @@ Audio features carry some signal (all models beat the baseline), but the predict
 | `experiments.ipynb` | Full project: problem statement, IDA, EDA, baselines, nested CV, permutation importance, ablation, conclusions |
 | `top10s.csv` | Dataset |
 | `requirements.txt` | Python dependencies |
+| `images/` | Charts and screenshots used in this README |
 
 ## Data source
 
